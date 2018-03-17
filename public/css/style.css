@@ -1,0 +1,722 @@
+/**
+* main login page
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    min-width: 500px
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.block {
+    padding: 20px 25px 20px;
+    border: 1px solid #ddd;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #fff;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none !important;
+}
+
+.wrapper .main {
+    padding-top: 125px;
+    background: rgba(212, 228, 239, 1);
+    background: -moz-linear-gradient(left, rgba(212, 228, 239, 1) 0%, rgba(212, 228, 239, 1) 23%, rgba(134, 174, 204, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(212, 228, 239, 1)), color-stop(23%, rgba(212, 228, 239, 1)), color-stop(100%, rgba(134, 174, 204, 1)));
+    background: -webkit-linear-gradient(left, rgba(212, 228, 239, 1) 0%, rgba(212, 228, 239, 1) 23%, rgba(134, 174, 204, 1) 100%);
+    background: -o-linear-gradient(left, rgba(212, 228, 239, 1) 0%, rgba(212, 228, 239, 1) 23%, rgba(134, 174, 204, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(212, 228, 239, 1) 0%, rgba(212, 228, 239, 1) 23%, rgba(134, 174, 204, 1) 100%);
+    background: linear-gradient(to right, rgba(212, 228, 239, 1) 0%, rgba(212, 228, 239, 1) 23%, rgba(134, 174, 204, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1);
+    height: 100vh;
+}
+
+.table > thead > tr > th {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding-left: 0;
+}
+
+table tbody tr > td {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0px !important;
+}
+
+ul.list-group-profile {
+    padding-left: 0;
+}
+
+ul.list-group-profile > li {
+    list-style: none;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+    margin-bottom: -1px;
+}
+
+ul.list-group-profile > li > span {
+    margin-left: 10px;
+}
+
+.logo_image {
+    border-width: 0;
+    height: 300px;
+}
+
+h3.employee-name {
+    margin-bottom: 5px;
+}
+
+.form_login {
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.form_login form div {
+    width: 270px;
+    margin: 0 auto 20px;
+}
+
+.form_login form div input {
+    background-color: #ececec;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-style: normal;
+    font-size: 16px;
+    height: 47px;
+    color: #000;
+    text-align: center;
+}
+
+.form_login form div button {
+    border: none;
+    height: 37px;
+    margin-top: 45px;
+    padding: 0 15px;
+    font-size: 18px;
+    background-color: #036dbe;
+    color: #d5d5d5;
+}
+
+.form-control::-moz-placeholder {
+    color: #000;
+    opacity: 0.6;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #000;
+    opacity: 0.6;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.6;
+}
+
+.main_copyright_text {
+    border-width: 0;
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    width: 237px;
+    word-wrap: break-word;
+}
+
+.portlet-header {
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.portlet-title {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    color: #435f76;
+}
+
+.portlet-title:after {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 10;
+    width: 80px;
+    height: 1px;
+    margin: 20px 0 0;
+    background: #6685a4;
+}
+
+/*
+* Vacations Balance Block
+*/
+table.table_vacantion_request {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.vacations-balance .table tr > td {
+    vertical-align: middle;
+}
+
+.vacations-balance .table tr > td > a.vacantion_request_button {
+    float: right;
+    padding: 4px 10px;
+}
+
+/*
+*Eessential Block
+ */
+.essential-block {
+    margin-top: 20px;
+}
+
+table.essential-table {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/*
+* Planned Workload
+ */
+.planned-workload-block {
+    margin-top: 20px;
+}
+
+.planned-workload-block span.year {
+    font-size: 10px;
+    font-weight: 100;
+    color: grey;
+}
+
+table.table-planned-workload tbody td.total {
+    font-weight: bolder;
+}
+
+/*
+* Activity feed block
+ */
+.activity-feed {
+    margin-top: 20px;
+}
+
+.feed-block {
+    margin-top: 20px;
+}
+
+/**
+* end main login page
+ */
+
+/*==========================================================================*/
+
+/**
+* end user page
+ */
+.container-fluid {
+    padding-right: 0;
+}
+
+.user_page {
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.user_page_greeting {
+    position: fixed;
+    margin-left: 65px;
+    width: 100%;
+    height: 65px;
+    font-size: 20px;
+    background-color: #e5e5e5;
+    z-index: 100000;
+    border-bottom: 1px solid #d8d8d8;
+    padding-top: 10px;
+}
+
+.user_page_greeting h2.welcome {
+    margin: 0;
+    float: left;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349019607843137);
+}
+
+.user_page_greeting button.logout {
+    display: block;
+    float: right;
+    position: relative;
+    right: 10%;
+}
+
+.user_page_greeting button {
+
+}
+
+.user_page_logo {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    height: 50px;
+}
+
+.personal_information_wrapper table tbody tr td {
+    text-align: left;
+}
+
+.profile_img_wrap {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.profile_img {
+    width: auto;
+    height: 258px;
+    background-size: cover;
+}
+
+.contact_information h4 {
+    text-align: left;
+    padding-top: 75px;
+    font-size: 20px;
+    white-space: nowrap;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349019607843137);
+}
+
+.contact_information table tr td {
+    padding: 8px 20px 8px 0;
+    border: none;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.personal_information_wrapper {
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.personal_information_wrapper h4 {
+    text-align: center;
+    margin: 100px 0 20px 0;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.personal_information_wrapper table {
+
+    font-style: normal;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.user_photo_icon {
+    cursor: pointer;
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.page-header {
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+
+.panel-heading {
+    text-align: center;
+    text-shadow: none;
+}
+
+.project_table {
+    font-size: 15px;
+}
+
+ol.projects > li, ol.projects > li > a {
+    font-size: 18px;
+}
+
+/**
+* end user page
+ */
+
+/**
+* start timesheet page
+ */
+.current_date_wrapper {
+    margin: 10px 0 50px 0;
+}
+
+.current_date_wrapper .current_day {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    border-radius: 45px;
+    background-color: #035BA9;
+    color: #fff;
+    margin-right: 15px;
+    padding-top: 6px;
+    text-align: center;
+}
+
+.central-part .row {
+    margin: 6px 0 30px 0;
+}
+
+#billable_time_input {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+#billable_time_input::-webkit-outer-spin-button,
+#billable_time_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#billable_time_start {
+    float: right;
+    width: 100px;
+}
+
+.billable_buttons_row {
+    text-align: center;
+}
+
+.billable_buttons_row div {
+    margin: 0;
+}
+
+.billable_buttons {
+    width: 100%;
+    min-width: 55px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.task_select {
+    width: 100%;
+}
+
+#billable_check {
+    color: #fff;
+}
+
+.notBold {
+    font-weight: normal;
+}
+
+.daily_timesheet_panel {
+    font-size: 15px;
+    display: block;
+    height: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.daily_timesheet_panel .text_note {
+    width: 30%;
+}
+
+.daily_timesheet_total-time {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    font-size: 12px;
+    border-radius: 25px;
+    background-color: #FFA500;
+    color: #fff;
+    margin-top: 15px;
+    align-items: center;
+    padding-left: 9px;
+    padding-right: 0;
+}
+
+.daily_timesheet_total-time span {
+    text-align: center;
+    padding-right: 5px;
+    width: 100%;
+}
+
+#select_all {
+    margin: 0 10px 0 0;
+}
+
+.first_cell_daily {
+    width: 50px;
+}
+
+.select_all_wrapper {
+    padding: 5px;
+}
+
+#delete_all {
+    font-size: 15px;
+    color: #cccccc;
+}
+
+#error_msg {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.time_type {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.time_type span {
+    cursor: pointer;
+}
+
+.active_time_type {
+    color: #035BA9;
+}
+
+.delete_active {
+    color: #035BA9 !important;
+    cursor: pointer;
+}
+
+.fa-usd {
+    margin: 0 0 0 15px;
+    color: #cccccc !important;
+    cursor: pointer;
+}
+
+.billable_icon {
+    color: #035BA9 !important;
+}
+
+.weekly_timesheet_weeks {
+    margin-top: 50px;
+}
+
+.weekly_timesheet_weeks tr td {
+    border: none !important;
+}
+
+.weekly_timesheet_weeks a {
+    font-size: 14px;
+}
+
+.weekly_timesheet_projects {
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+.weekly_timesheet_projects table tr td span {
+    margin-right: 15px;
+}
+
+#weekly_save_button {
+    margin-top: 30px;
+}
+
+.yearly_timesheet_title {
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.yearly_timesheet_table {
+    margin-top: 110px;
+    font-size: 15px;
+}
+
+.timesheet_single {
+    margin-top: 100px;
+}
+
+.timesheet_single select {
+    margin-bottom: 20px;
+}
+
+.timesheet_table {
+    margin-top: 110px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.organization_chart li {
+    list-style: none;
+}
+
+.main_picture_li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.organization_chart img {
+    width: 60px;
+    height: auto;
+}
+
+.inner_ul li {
+    border-left: 1px dotted #cccccc;
+}
+
+.inner_ul li .grey_dots {
+    font-size: 6px;
+    padding-right: 10px;
+}
+
+.inner_ul li .grey_dots {
+    margin-right: 10px;
+    border-bottom: 1px dotted #cccccc;
+}
+
+.inner_ul li:last-child .grey_dots {
+    display: inline-block;
+    height: 40px;
+}
+
+.inner_ul li a {
+    margin-right: 15px;
+}
+
+.personal_info {
+    margin-top: 50px;
+}
+
+.personal_info tbody tr td {
+    border: none;
+    font-size: 16px;
+    float: left;
+    width: 250px;
+}
+
+.personal_info tbody tr td:first-child {
+    /*float: left;*/
+    /*width: 150px;*/
+}
+
+.list-group-item {
+    font-size: 15px;
+}
+
+h4.no-border {
+    text-shadow: none;
+}
+
+.portlet-boxed .no-border.portlet-title:after {
+    bottom: -12px;
+    margin: 0;
+}
+
+.panel-default > .panel-heading {
+    background-color: #fff;
+}
+
+.calend table tr td {
+    font-size: 18px;
+}
+
+#billable_textarea {
+    min-width: 230px;
+}
+
+.sidebar-menu a {
+    color: #333;
+    font-size: 17px;
+}
+
+.portlet-body1 {
+    font-size: 20px;
+}
+
+.project_rate {
+    margin: 0 5px 0 -7px;
+    color: #000000 !important;
+    cursor: auto;
+}
+
+.logo {
+    color: #ffffff;
+    top: 16px;
+    position: absolute;
+    left: 40px;
+    font-size: 22px;
+}
+
+.current_week_range {
+    text-decoration: underline;
+}
+
+td.statistic_date {
+    font-size: 14px;
+    color: #2b3d4c;
+    font-weight: 400;
+
+}
+
+td.statistic_task {
+    padding-left: 40px !important;
+}
+
+td.statistic_total {
+    font-weight: 700;
+    padding-bottom: 30px !important;
+}
+
+.welcome-user {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.statistics {
+    margin-top: 30px !important;
+}
+
+.statistics td {
+    font-size: 15px;
+}
+
+.upload_photo {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.panel .accordion-toggle {
+    text-align: left;
+}
+
+.loader_wrapper {
+    top: 33% !important;
+}
+
+/**
+* end timesheet page
+ */
+
+

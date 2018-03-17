@@ -1,0 +1,117 @@
+/* Common style Admin Control */
+.welcome-admin {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Main Admin Page Container */
+.team-profiles-row {
+    margin-top: 100px;
+}
+
+ul.team-profiles-menu > li, .dropdown li {
+    list-style: none;
+}
+
+ul.team-profiles-menu > li > i, .dropdown li > i {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+ul.team-profiles-menu > li > a, .dropdown li > a {
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+    display: inline-flex;
+}
+
+ul.dropdown-menu li > a {
+    color: black;
+    font-size: 15px;
+    display: inline-flex;
+    margin-left: 0;
+}
+
+ul.team-profiles-menu > li > ol.dropdown > li > a {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.current_date_wrapper {
+    margin-top: 100px !important;
+}
+
+.central-part {
+    margin-top: 250px;
+}
+
+#weekly .central-part {
+    margin-top: 10px;
+}
+
+#datepicker {
+    margin-left: 20%;
+}
+
+#datepicker .datepicker table {
+    max-width: 350px;
+    font-size: 24px;
+}
+
+h2.title-page {
+    text-align: center;
+}
+
+/* Table Users All && Table Projects All*/
+.add-user, .add-project {
+    width: 64px;
+    height: 64px;
+    background: #3a5266;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: bold;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.add-user span, .add-project span {
+    color: #ffffff;
+    margin-top: 7px;
+    display: inline-flex;
+}
+
+.add-user:hover, .add-project:hover {
+    transform: rotate(360deg);
+}
+
+.add-user a, .add-project a {
+    font-size: 16px;
+    color: #3a5266;
+    margin-left: 5px;
+    margin-top: -7px;
+    display: inline-flex;
+}
+
+.table-users, .table-projects {
+    margin-top: 20px;
+}
+
+.table-users table tbody tr > td, .table-projects table tbody tr > td {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.table-users table tbody tr > td hr, .table-projects table tbody tr > td hr {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
